@@ -4,7 +4,7 @@ import streamlit as st
 
 st.header('Datos mundiales recopilados por Naciones Unidas sobre la meta de desarrollo sostenible número 15: Proteger, restablecer y promover el uso sostenible de los ecosistemas terrestres, gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e invertir la degradación de las tierras y detener la pérdida de biodiversidad')  # poner un encabezado
 
-bosques_data = pd.read_csv('Data_SDG15.csv')  # leer los datos
+bosques_data = pd.read_csv('Data_SDG15.csv', sep=";")  # leer los datos
 
 hist_button = st.button('Construir histograma de bosques')  # crear un botón
 
